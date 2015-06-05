@@ -43,5 +43,15 @@ To run particular backends just include them in your pom (the default right now 
 -n number of trials
 
 
+#Custom Op Runners
+
+Create a class extending BaseBenchmarkPerformer (very similarily to what I do in the copy benchmark)
+
+Create an associated OpRunner. 
+
+Pass that custom op runner in to your new benchmaker performer.
+
+The BenchmarkRunnerApp will automatically pick up those classes and run them for you.
+
 
 
