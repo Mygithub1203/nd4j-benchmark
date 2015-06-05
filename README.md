@@ -34,9 +34,14 @@ If you need more heap space (in your VM arguments) put:
 -Xmx2g -Xms2g
 
 
-If you leave -r off, it will run every benchmark on the class path
+#Flags
+
+-r If you leave -r off, it will run every benchmark on the class path
 
 To run particular backends just include them in your pom (the default right now for this is jcublas vs jblas)
+
+-n number of trials
+
 
 
 
