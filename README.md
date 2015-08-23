@@ -10,7 +10,7 @@ Run:
 
 Here's a general matrix multiplication (Gemm) example already baked in to the nd4j-perf module:
 
-    java -cp lib/* org.nd4j.linalg.benchmark.app.BenchmarkRunnerApp -n 10k -r org.nd4j.linalg.benchmark.gemm.GemmBenchmarkPerformer,org.nd4j.linalg.benchmark.gemm.GemmBenchmarkPerformer
+    java -cp lib/* org.nd4j.linalg.benchmark.app.BenchmarkRunnerApp -n 10000 -r org.nd4j.linalg.benchmark.gemm.GemmBenchmarkPerformer,org.nd4j.linalg.benchmark.gemm.GemmBenchmarkPerformer
 
 ##IntelliJ
 
