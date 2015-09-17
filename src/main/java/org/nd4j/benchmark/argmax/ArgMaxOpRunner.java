@@ -1,4 +1,4 @@
-package org.nd4j.benchmark.elementwise.c;
+package org.nd4j.benchmark.argmax;
 
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.benchmark.api.OpRunner;
@@ -7,17 +7,17 @@ import org.nd4j.linalg.factory.Nd4j;
 /**
  * @author Adam Gibson
  */
-public class ElementWiseOpRunner implements OpRunner {
+public class ArgMaxOpRunner implements OpRunner {
     INDArray arr;
 
-    public ElementWiseOpRunner() {
+    public ArgMaxOpRunner() {
         Nd4j.factory().setOrder('c');
-        arr = Nd4j.create(128, 119537);
+        arr = Nd4j.create(12000,12000);
     }
 
     @Override
     public void runOp() {
-        arr.addi(arr);
+        Nd4j.argMax(arr,1);
     }
 
 
