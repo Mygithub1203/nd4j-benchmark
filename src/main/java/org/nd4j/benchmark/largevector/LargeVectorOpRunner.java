@@ -7,10 +7,10 @@ import org.nd4j.linalg.factory.Nd4j;
 /**
  * @author Adam Gibson
  */
-public class ArgMaxOpRunner implements OpRunner {
+public class LargeVectorOpRunner implements OpRunner {
     INDArray arr;
 
-    public ArgMaxOpRunner() {
+    public LargeVectorOpRunner() {
         Nd4j.factory().setOrder('c');
         arr = Nd4j.create(1,65000000);
     }
