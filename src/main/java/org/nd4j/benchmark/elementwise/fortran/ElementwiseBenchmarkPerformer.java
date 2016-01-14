@@ -5,9 +5,9 @@ import org.nd4j.linalg.benchmark.api.BaseBenchmarkPerformer;
 /**
  * @author Adam Gibson
  */
-public class ElementwisenchmarkPerformer extends BaseBenchmarkPerformer {
+public class ElementwiseBenchmarkPerformer extends BaseBenchmarkPerformer {
 
-    public ElementwisenchmarkPerformer(int nTimes) {
+    public ElementwiseBenchmarkPerformer(int nTimes) {
         super(new ElementWiseOpRunner(),nTimes);
     }
 

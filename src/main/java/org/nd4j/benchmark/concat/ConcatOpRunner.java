@@ -12,7 +12,7 @@ public class ConcatOpRunner implements OpRunner {
 
     public ConcatOpRunner() {
         Nd4j.factory().setOrder('c');
-        arr = Nd4j.create(1000, 1000);
+        arr = Nd4j.create(12000, 12000);
     }
 
     @Override

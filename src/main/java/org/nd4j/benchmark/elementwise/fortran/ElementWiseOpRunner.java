@@ -12,7 +12,7 @@ public class ElementWiseOpRunner implements OpRunner {
 
     public ElementWiseOpRunner() {
         Nd4j.factory().setOrder('f');
-        arr = Nd4j.create(1000,1000);
+        arr = Nd4j.create(12000,12000);
     }
 
     @Override

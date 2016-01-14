@@ -9,16 +9,17 @@ public class TestMMul {
         doTests('f','f');
         doTests('f','c');
         doTests('c','f');
-        doTests('c','c');
+        for(int i = 0; i < 100; i++)
+            doTests('c','c');
     }
 
     public static void doTests(char order1, char order2){
-        int size = 500;
+        int size = 200;
 
         INDArray first = Nd4j.create(new int[]{size,size},order1);
         INDArray second = Nd4j.create(new int[]{size, size}, order2);
 
-        int countBefore = 100;
+        int countBefore = 200;
         int count = 200;
 
         for( int i=0; i<countBefore; i++ ){
