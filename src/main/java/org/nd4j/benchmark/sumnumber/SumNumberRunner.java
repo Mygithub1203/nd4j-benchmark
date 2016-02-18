@@ -17,7 +17,7 @@ public class SumNumberRunner implements OpRunner {
 
     @Override
     public void runOp() {
-        arr.sumNumber();
+        arr.sum(0);
     }
 
 

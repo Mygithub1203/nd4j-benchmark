@@ -12,7 +12,7 @@ public class LargeVectorOpRunner implements OpRunner {
 
     public LargeVectorOpRunner() {
         Nd4j.factory().setOrder('c');
-        arr = Nd4j.create(1,65000000);
+        arr = Nd4j.create(100,65000000);
     }
 
     @Override

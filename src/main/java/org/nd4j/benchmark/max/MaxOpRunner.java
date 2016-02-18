@@ -12,13 +12,13 @@ public class MaxOpRunner implements OpRunner {
 
     public MaxOpRunner() {
         Nd4j.factory().setOrder('c');
-        arr = Nd4j.create(1000,1000);
+        arr = Nd4j.create(12000,12000);
     }
 
     @Override
     public void runOp() {
         //Nd4j.getBlasWrapper().iamax(arr);
-        arr.max(1);
+        arr.sum(1);
     }
 
 
